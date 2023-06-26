@@ -36,7 +36,7 @@ public class LogAdvice {
         System.out.println("get请求之后，advice触发了");
     }
 
-    //环绕通知，在方法执行前有提示，在方法执行后有提示
+    // 环绕通知，在方法执行前有提示，在方法执行后有提示
     @Around("logAdvicePointcut()")
     public Object logAround(ProceedingJoinPoint point) throws Throwable{
         System.out.println("在get方法执行之前，around执行了");

@@ -10,16 +10,14 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 /**
- * @author guozhengMu
- * @version 1.0
- * @createTime 2020/10/16 14:16
- * @description
+ * 一个切面类
  */
 
 @Aspect
 @Component
 @Order(0)
 public class PermissionSecondAdvice {
+    // 设置自定义注解作为切点
     @Pointcut("@annotation(com.aop.annotation.PermissionAnnotation)")
     private void permissionCheck() {
     }

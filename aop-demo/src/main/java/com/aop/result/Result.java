@@ -8,7 +8,7 @@ import lombok.Data;
 @Data
 public class Result{
     // 状态码
-    public int code;
+    public int code = 200;
     // 信息
-    public String message;
+    public String message = "成功";
 }

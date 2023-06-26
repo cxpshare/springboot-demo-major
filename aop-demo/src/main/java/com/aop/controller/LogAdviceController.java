@@ -14,19 +14,13 @@ public class LogAdviceController {
     @GetMapping(value = "/getTest")
     public Result getTest(){
         System.out.println("GET请求执行中");
-        Result result = new Result();
-        result.setCode(200);
-        result.setMessage("成功！");
-        return result;
+        return new Result();
     }
 
     @PostMapping(value = "/postTest")
     public Result postTest(Object obj){
         System.out.println("POST请求执行中");
-        Result result = new Result();
-        result.setCode(200);
-        result.setMessage("成功！");
-        return result;
+        return new Result();
     }
 
 }
